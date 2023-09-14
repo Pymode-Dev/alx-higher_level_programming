@@ -8,6 +8,9 @@ def roman_to_int(roman_string):
     integer = 0
     prev_int = 0
 
+    if roman_string is None or not roman_string.isalpha():
+        return None
+
     for string in reversed(roman_string):
         current_int = sample[string]
 
