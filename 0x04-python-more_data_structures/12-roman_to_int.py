@@ -8,7 +8,7 @@ def roman_to_int(roman_string):
     integer = 0
     prev_int = 0
 
-    if roman_string is None or not roman_string.isalpha():
+    if roman_string is None or not isinstance(roman_string, str):
         return 0
 
     for string in reversed(roman_string):
