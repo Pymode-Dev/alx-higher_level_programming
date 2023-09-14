@@ -3,6 +3,6 @@ def weight_average(my_list=[]):
     if len(my_list) == 0:
         return 0
 
-    div = sum([l[1] for l in my_list])
-    weight = sum([l[0] * l[1] for l in my_list])
+    div = sum([element[1] for element in my_list])
+    weight = sum([element[0] * element[1] for element in my_list])
     return weight / div
