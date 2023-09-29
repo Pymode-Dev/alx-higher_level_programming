@@ -25,7 +25,7 @@ class MagicClass:
         """
         Calculate the area of a circle
         """
-        return (self.__radius **  2)
+        return (self.__radius **  2 * math.pi)
 
     def circumference(self):
         """
