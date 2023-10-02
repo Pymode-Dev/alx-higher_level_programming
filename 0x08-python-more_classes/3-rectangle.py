@@ -59,7 +59,7 @@ class Rectangle:
         string = []
 
         if 0 in (self.__width, self.__height):
-            return " "
+            return ""
 
         for i in range(self.__height):
             string.append('#' * self.__width)
