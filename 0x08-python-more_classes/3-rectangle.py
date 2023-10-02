@@ -56,10 +56,11 @@ class Rectangle:
         """
         print ascii rectangle
         """
-        string = ""
+        string = []
+
         if 0 in (self.__width, self.__height):
-            string = " "
-        else:
-            for i in range(self.__height):
-                string += "{}\n".format('#' * self.__width)
-        return string
+            return " "
+
+        for i in range(self.__height):
+            string.append('#' * self.__width)
+        return "\n".join(string)
