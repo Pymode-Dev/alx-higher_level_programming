@@ -57,9 +57,9 @@ class Rectangle:
         print ascii rectangle
         """
         string = ""
-        if 0 in (self.width, self.height):
+        if 0 in (self.__width, self.__height):
             string = " "
         else:
-            for i in range(self.height):
-                string += "{}\n".format('#' * self.width)
+            for i in range(self.__height):
+                string += "{}\n".format('#' * self.__width)
         return string
