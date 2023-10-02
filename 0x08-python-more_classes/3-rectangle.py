@@ -52,7 +52,7 @@ class Rectangle:
             return 0
         return (int(self.width) + int(self.height)) * 2
 
-    def __repr__(self):
+    def __str__(self):
         """
         print ascii rectangle
         """
