@@ -54,4 +54,6 @@ class Rectangle:
         """
         calculates the perimeter of a rectangle
         """
+        if 0 in (self.width, self.height):
+            return 0
         return (int(self.width) + int(self.height)) * 2
