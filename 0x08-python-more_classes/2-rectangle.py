@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A rectangle implementation that has widht and height and can calculates 
+A rectangle implementation that has widht and height and can calculates
 area and perimeter
 """
 
