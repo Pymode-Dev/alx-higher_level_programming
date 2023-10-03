@@ -11,6 +11,7 @@ class Rectangle:
     methods: area, perimeter, __str__, __repr__, __del__
     """
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
