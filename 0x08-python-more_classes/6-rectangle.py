@@ -59,8 +59,8 @@ class Rectangle:
         return "\n".join(string)
 
     def __repr__(self):
-        rect = "Rectangle("+str(self.__width)+", "+str(self.__height)
-        rect += ")"
+        rect = "Rectangle(" + str(self.width) + ", "
+        rect += str(self.height) + ")"
         return rect
 
     def __del__(self):
