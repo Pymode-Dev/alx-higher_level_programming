@@ -43,24 +43,24 @@ class Rectangle:
 
     def area(self):
         """calculates area"""
-        return int(self.width) * int(self.height)
+        return int(self.__width) * int(self.__height)
 
     def perimeter(self):
         """calculates perimeter"""
-        if 0 in (self.width, self.height):
+        if 0 in (self.__width, self.__height):
             return (0)
-        return (int(self.width) + int(self.height)) * 2
+        return (int(self.__width) + int(self.__height)) * 2
 
     def __str__(self):
-        if 0 in (self.width, self.height):
+        if 0 in (self.__width, self.__height):
             return ""
 
         string = ['#' * self.__width for i in range(self.__height)]
         return "\n".join(string)
 
     def __repr__(self):
-        rect = "Rectangle(" + str(self.width) + ", "
-        rect += str(self.height) + ")"
+        rect = "Rectangle(" + str(self.__width) + ", "
+        rect += str(self.__height) + ")"
         return rect
 
     def __del__(self):
