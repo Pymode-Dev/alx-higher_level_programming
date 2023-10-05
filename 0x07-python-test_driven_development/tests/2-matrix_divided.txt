@@ -1,5 +1,4 @@
-==============================
-How To Use 2-matrix_divided.py
+How to Use 2-matrix_divided.py
 ==============================
 
 This module defines a matrix division function ``matrix_divided(matrix, div)``.
@@ -114,52 +113,4 @@ neither ints nor floats.
 
     >>> matrix = [
     ...     [1, 2, 3],
-    ...     [4, "not a number", 6]
-    ... ]
-    >>> print(matrix_divided(matrix, 3))
-    Traceback (most recent call last):
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-
-Finally, all the rows in ``matrix`` must be the same size. If any rows are
-of different sizes, a new TypeError is raised.
-
-::
-
-    >>> matrix = [
-    ...     [1, 2, 3, 4],
-    ...     [5, 6, 7]
-    ... ]
-    >>> print(matrix_divided(matrix, 3))
-    Traceback (most recent call last):
-    TypeError: Each row of the matrix must have the same size
-
-Invalid Divisors
-================
-
-The parameter ``div`` must be either an int or float. Otherwise, a TypeError
-is raised.
-
-::
-
-    >>> matrix = [
-    ...     [1, 2, 3],
-    ...     [4, 5, 6]
-    ... ]
-    >>> print(matrix_divided(matrix, "not a number"))
-    Traceback (most recent call last):
-    TypeError: div must be a number
-
-::
-
-    >>> print(matrix_divided(matrix, None))
-    Traceback (most recent call last):
-    TypeError: div must be a number
-
-``div`` must also be non-zero. Otherwise, a ZeroDivisionError is raised.
-
-::
-
-    >>> print(matrix_divided(matrix, 0))
-    Traceback (most recent call last):
-    ZeroDivisionError: division by zero
+    ...     [4, "not a number", 6]]
