@@ -3,6 +3,7 @@
 0-lookup.py
 """
 
+
 def lookup(obj):
     """
     lookup - function that returns the list of available attributes
