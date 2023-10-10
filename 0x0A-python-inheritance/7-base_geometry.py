@@ -9,9 +9,15 @@ class BaseGeometry:
     Class: BaseGeometry
     """
     def area(self):
+        """
+        Find area
+        """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
+        """
+        Integer validation
+        """
         if isinstance(value, int) is False:
             raise TypeError(f"{name} must be an integer")
         if int(value) <= 0:
