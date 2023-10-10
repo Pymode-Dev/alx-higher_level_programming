@@ -5,6 +5,9 @@
 
 
 class MyInt(int):
+    """
+    MyInt
+    """
     def __init__(self, number):
         self.__number = number
 
