@@ -19,6 +19,6 @@ class BaseGeometry:
         Integer validation
         """
         if isinstance(value, int) is False:
-            raise TypeError(f"{name} must be an integer")
+            raise TypeError("{:s} must be an integer".format(name))
         if int(value) <= 0:
-            raise ValueError(f"{name} must be greater than 0")
+            raise ValueError("{:s} must be greater than 0".format(name))
