@@ -5,6 +5,13 @@
 
 
 def pascal_triangle(n):
+    """
+    pascal_triangle: calculate pascal triangle
+    Args:
+        n: the nth triangle
+    Return:
+        list of lists
+    """
     if n <= 0:
         return []
 
