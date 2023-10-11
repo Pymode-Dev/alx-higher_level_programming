@@ -20,7 +20,11 @@ class Student:
 
     def to_json(self, attrs=None):
         if attrs:
-            for i in attrs:
-                if i in self.__dict__:
-                    del self.__dict__[i]
-        return self.__dict__
+            if all(isinstance(elem, str) for elem in attrs):
+                return {
+                        key: getattr(self, key)
+                        for key in attrs
+                        if hasattr(self, key)
+                        }
+        class_dict = self.__dict__
+        return class_dict
