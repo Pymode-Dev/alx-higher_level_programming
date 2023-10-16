@@ -116,5 +116,14 @@ class Rectangle(Base):
             self.__x = kwargs.get('x', self.__x)
             self.__y = kwargs.get('y', self.__y)
 
+    def to_dictionary(self):
+        return {
+                'id': self.id,
+                'width': self.__width,
+                'height': self.__height,
+                'x': self.__x,
+                'y': self.__y
+                }
+
     def __str__(self):
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
