@@ -42,7 +42,7 @@ class Rectangle:
             return (0)
         return (2 * (self.__width + self.__height))
 
-    def __repr__(self):
+    def __str__(self):
         """Print 3 in retangle form."""
         output = ""
         if 0 in (self.__width, self.__height):
