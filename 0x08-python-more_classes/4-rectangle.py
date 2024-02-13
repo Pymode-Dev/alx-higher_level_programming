@@ -54,6 +54,7 @@ class Rectangle:
 
     def __repr__(self):
         """to receate a new instance."""
-        output = "Rectangle({}, {})".format(str(self.__width),
-            str(self.__height))
+        output = "Rectangle({}, {})".format(
+                str(self.__width), str(self.__height)
+                )
         return output
