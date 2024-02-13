@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """A rectangle class with area and perimeter calculated."""
 
-
 class Rectangle:
     """Rectangle class implementatin."""
     def __init__(self, width=0, height=0):
@@ -42,3 +41,12 @@ class Rectangle:
         if 0 in (self.__width, self.__height):
             return (0)
         return (2 * (self.__width + self.__height))
+
+    def __repr__(self):
+        """Print 3 in retangle form."""
+        output = ""
+        if 0 in (self.__width, self.__height):
+            return ""
+        for i in range(0, self.__height):
+            output += "{}\n".format('#' * self.__width)
+        return output
