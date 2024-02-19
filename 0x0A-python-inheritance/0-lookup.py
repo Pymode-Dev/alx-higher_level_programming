@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-lookup - a function that returns the list of available attr and methods of an object
+lookup - a function that returns the list of available attr
+and methods of an object
 """
 
 
