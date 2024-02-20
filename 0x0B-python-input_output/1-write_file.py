@@ -2,7 +2,6 @@
 """Write a file."""
 
 
-
 def write_file(filename="", text=""):
     """
     write_file - a function that writes to a text file and returns
