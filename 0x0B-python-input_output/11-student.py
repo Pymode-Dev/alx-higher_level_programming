@@ -23,7 +23,7 @@ class Student:
             dict
         """
         if isinstance(attrs, list) and \
-        all(isinstance(ele, str) for ele in attrs):
+                all(isinstance(ele, str) for ele in attrs):
             return {i: getattr(self, i)
                     for i in attrs if hasattr(self, i)}
         return self.__dict__
