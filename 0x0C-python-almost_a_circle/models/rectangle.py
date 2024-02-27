@@ -10,6 +10,16 @@ class Rectangle(Base):
     Methods:
     """
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        __init__ - initialize a new class
+        Args:
+            width: the width of rectangle
+            height: the height of rectangle
+            x
+            y
+        Return:
+            None
+        """
         self.width = width
         self.height = height
         self.x = x
